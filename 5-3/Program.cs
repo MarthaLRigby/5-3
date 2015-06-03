@@ -20,6 +20,9 @@ namespace _5_3
             Console.Write("Input> ");
             int myInt = Convert.ToInt32(Console.ReadLine());
             numberType nT;
+            // In general, we always prefer the use of full words for variable names - having an abbreviation
+            // like this makes your code harder to read, and your IDE will autocomplete longer variable names
+            // for you anyway, so it's not a big deal to type it out. I'd reccomend a name like 'type'.
             if (myInt % 2 == 0) nT = numberType.even;
             else nT = numberType.odd;
             if (myInt % 10 == 0) nT = numberType.mult10;
